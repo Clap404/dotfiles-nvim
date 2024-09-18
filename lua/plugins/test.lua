@@ -25,11 +25,6 @@ return {
     opts = {
       adapters = {
         ["neotest-jest"] = {
-          jest_test_discovery = false,
-          discovery = {
-            enabled = false,
-          },
-          jestCommand = "npx jest",
           jestConfigFile = findClosestJestConfig,
           cwd = function(file)
             return vim.fs.dirname(findClosestJestConfig(file))
