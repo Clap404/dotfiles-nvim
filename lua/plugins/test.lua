@@ -19,7 +19,8 @@ local function findClosestJestConfig(file)
 end
 
 return {
-  { "nvim-neotest/neotest-jest" },
+  --{ "nvim-neotest/neotest-jest" },
+  { "dlvandenberg/neotest-jest", branch = "feat-call-expressions-in-testcase" },
   {
     "nvim-neotest/neotest",
     opts = {
