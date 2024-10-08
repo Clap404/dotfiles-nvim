@@ -21,6 +21,7 @@ end
 return {
   --{ "nvim-neotest/neotest-jest" },
   { "dlvandenberg/neotest-jest", branch = "feat-call-expressions-in-testcase" },
+  { "thenbe/neotest-playwright" },
   {
     "nvim-neotest/neotest",
     opts = {
@@ -30,6 +31,17 @@ return {
           cwd = function(file)
             return vim.fs.dirname(findClosestJestConfig(file))
           end,
+        },
+        ["neotest-playwright"] = {
+          options = {
+            persist_project_selection = true,
+            enable_dynamic_test_discovery = true,
+          },
+          experimental = {
+            telescope = {
+              enabled = true,
+            },
+          },
         },
       },
     },
