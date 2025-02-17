@@ -7,7 +7,7 @@ return {
           settings = {
             typescript = {
               inlayHints = {
-                variableTypes = { enabled = true },
+                variableTypes = { enabled = false },
               },
             },
           },
