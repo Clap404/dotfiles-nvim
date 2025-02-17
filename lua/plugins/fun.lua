@@ -4,20 +4,15 @@ end
 
 return {
   {
-    "ActionScripted/tetris.nvim",
-    cmd = { "Tetris" },
-    keys = { { "<leader>T", "<cmd>Tetris<cr>", desc = "Tetris" } },
+    "alec-gibson/nvim-tetris",
+  },
+  {
+    "folke/snacks.nvim",
+    priority = 1000,
+    lazy = false,
     opts = {
-      -- your awesome configuration here
-    },
-    {
-      "folke/snacks.nvim",
-      priority = 1000,
-      lazy = false,
-      opts = {
-        -- smooth scroll misbehaves in neovide
-        scroll = { enabled = not vim.g.neovide },
-      },
+      -- smooth scroll misbehaves in neovide
+      scroll = { enabled = not vim.g.neovide },
     },
   },
 }
