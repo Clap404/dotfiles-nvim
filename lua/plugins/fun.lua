@@ -12,7 +12,7 @@ return {
     lazy = false,
     opts = {
       -- smooth scroll misbehaves in neovide
-      scroll = { enabled = not vim.g.neovide },
+      scroll = { enabled = false },
     },
   },
 }
