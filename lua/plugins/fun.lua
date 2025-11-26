@@ -4,14 +4,11 @@ end
 
 return {
   {
-    "alec-gibson/nvim-tetris",
-  },
-  {
     "folke/snacks.nvim",
     priority = 1000,
     lazy = false,
     opts = {
-      -- smooth scroll misbehaves in neovide
+      -- smooth scroll
       scroll = { enabled = false },
     },
   },
