@@ -10,6 +10,10 @@ return {
           request = "launch",
           name = "Listen for Xdebug",
           port = 9003,
+          pathMappings = {
+            ["/var/www/html/modules/ps_mcp_server"] = "~/Work/ps_mcp_server/",
+            ["/var/www/html"] = "~/Work/PrestaShop/",
+          },
         },
         {
           type = "php",
